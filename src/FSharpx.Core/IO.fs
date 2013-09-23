@@ -1,14 +1,13 @@
 ﻿namespace FSharpx
 
-open System
-open System.IO
-open System.Text
+  open System
+  open System.IO
+  open System.Text
 
 module IO =
     let LinuxLineBreaks = "\n"
     let WindowsLineBreaks = "\r\n"
     let MacLineBreaks = "\r"
-
     /// Creates a DirectoryInfo for the given path
     let inline directoryInfo path = new DirectoryInfo(path)
 
